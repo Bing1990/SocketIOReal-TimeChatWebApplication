@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    title Socket.IO chat
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    link(rel='stylesheet', ,='', href='/stylesheets/homepage.css')
+    |     
+    script(src='https://cdn.socket.io/socket.io-1.2.0.js')
+    |     
+    script(src='http://code.jquery.com/jquery-1.11.1.js')
+    |     
+    script(src='/javascripts/sockets.js')
+    |     
+    |      
+  body
+    h1 Socket IO Real Time Application
+    |   
+    p Welcome to Wonderful social network, Enjoy it!
+    |   
+    p
+      | This is web socket real time communication application. Theweb pages that enable clients to perform web socket communication to one another &ndash; by sharing text messages with one another.Teen Connect has a social network for teenagers in high school. The organization has just completed its first expo &ndash; connecting teens with local businesses for internships. They found that during the event, most attendees had mobile phones but were having trouble exchanging phone numbers to connect with businesses. The social network is looking to augment its application (which is currently implemented on a node.js technology stack) with a real-time chat on its website, which can operate during events &ndash; they would like to implement their own technology, so that safety can be assured to its users.
+    p Please input your username, we can store it in NeDB. Thank you!  
+    |    
+    form(method="POST",action="")
+      input(type="text",id="name",name="name",class='form-control',class='usernameText',placeholder='Enter your username',style='width:20%')
+      br
+      input#joinButton.btn.btn-primary(type="submit") 
+      br
+      br
+    ul#messages
+    |     
+    form#text(action='')
+      input#m.form-control(autocomplete='off', placeholder='let us send some chat  messages now')
+      br
+      |       
+      button#send.btn.btn-success Send
+      br
+      br
+      |         
+      button#thumbs_up.btn.btn-info thumbs up
+      |       
+      button#thumbs_down.btn.btn-danger thumbs down
+      |       
+      br
+      br
+    |     
+    button#review.btn.btn-warning Review Logged Users
+    br    
+    footer Copyright @BingyuLiu 2015  
+
+  

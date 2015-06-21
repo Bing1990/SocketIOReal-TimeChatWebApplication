@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 User View
+  
+  form(method="POST",action="/users/save")
+    input(type="text",id="name",name="name")
+    input(type="submit")
+    p viewing to #{title}
